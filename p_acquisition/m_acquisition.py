@@ -9,13 +9,10 @@ from bs4 import BeautifulSoup as bs
 def acquire_db_data(path):
 
     # SqlAlchemy Engine
-    path = './data/raw/raw_data_project_m1.db'
     engine = create_engine(f'sqlite:///{path}')
     print('DataBase connected.')
 
-
     # Table acquisition ----> Saving as .parquet
-
     df_personal_info = pd.read_sql_table('personal_info', engine)
     df_personal_info.to_parquet('./data/raw/personal_info.parquet')
 
@@ -32,7 +29,7 @@ def acquire_db_data(path):
 
     # Closing connection to db
     engine.dispose()
-    print('DataBase connection closed')
+    print('DataBase connection closed\n')
 
 
 def api_request_job_codes():

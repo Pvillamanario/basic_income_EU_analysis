@@ -10,8 +10,12 @@ def analyze_ch1(country):
 
     pd.set_option('mode.chained_assignment', None)
 
+    if country == '':
+        print('Whole dataset selected: ')
     print(f'The chosen country is: {country}')
-    print('Starting country analysis.')
+
+
+    print('Starting analysis.')
     df_poll = pd.read_json('./data/processed/df_processed.json')
 
     df_ch1 = df_poll[['country', 'job_title', 'gender', 'uuid']]
@@ -22,8 +26,13 @@ def analyze_ch1(country):
                            'uuid': 'Quantity'},
                   inplace=True)
 
-    country_filter = df_ch1['Country'] == country.capitalize()
-    df_country = df_ch1.loc[country_filter]
+    if country == '':
+        df_country = df_ch1
+
+    else:
+        country_filter = df_ch1['Country'] == country.capitalize()
+        df_country = df_ch1.loc[country_filter]
+
     df_country['Country percentage ‰'] = df_country['Quantity'] / df_country['Quantity'].sum() * 1000
 
     df_country.to_csv('./data/results/country_analysis.csv')
