@@ -156,10 +156,10 @@ def email_reporting(email):
 
 def tweets():
 
-    CONSUMER_KEY = 'kMjAJ03t0W9Z53zDy5jlyUkBj'
-    CONSUMER_SECRET = 'FWYQRVEUR2QVte6kYUAIZXmEntjXNRP461VkJFjAB8eQlZqZYF'
-    ACCESS_TOKEN = '1273324310204166158-ZtNvphpB6U0QhTRj3bvSXpaGGjuMZI'
-    ACCESS_SECRET = 'eEf15oUhVCgEpiA1Sr9iSgyZuVVTYPIqDuK0u2C1gOxbS'
+    CONSUMER_KEY = '---'
+    CONSUMER_SECRET = '---'
+    ACCESS_TOKEN = '---'
+    ACCESS_SECRET = '---'
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
