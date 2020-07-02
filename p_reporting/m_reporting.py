@@ -1,10 +1,17 @@
-# Graphical libs
 import pandas as pd
+
+# Gmail key
+import configparser
+
+# Graphical libs
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# Reading images lib
+# Reading images libs
 from PIL import Image
+
+# Twitter API
+import tweepy
 
 # Email libs
 import smtplib
@@ -17,12 +24,11 @@ from email import encoders
 def graph_reporting(country):
     print('Loading data...')
 
-    df_country = pd.read_json('./data/results/country_analysis.json')
-    df_opinion = pd.read_json('./data/results/opinion_analysis.json')
-    df_edu = pd.read_json('./data/results/edu_level_analysis.json')
+    df_country = pd.read_csv('./data/results/country_analysis.csv')
+    df_opinion = pd.read_csv('./data/results/opinion_analysis.csv')
+    df_edu = pd.read_csv('./data/results/edu_level_analysis.csv')
 
-    print('Creating gender distribution chart.')
-
+    # Titles setting:
     if country == '':
         tit1 = 'European gender distribution'
         tit2 = 'European vote intention'
@@ -32,6 +38,7 @@ def graph_reporting(country):
         tit2 = f'Vote intention for {country}'
         tit3 = f'Top jobs/education level in {country}'
 
+    print('Creating gender distribution chart.')
     g = df_country[['Gender', 'Quantity']].set_index('Gender').groupby('Gender').sum().reset_index()
     ax = g.set_index('Gender').plot.pie(y='Quantity', x='Gender', figsize=(8, 8), title=tit1)
     fig = ax.get_figure()
@@ -52,7 +59,7 @@ def graph_reporting(country):
     print('Creating top jobs/education level chart.\n')
     plt.figure(figsize=(20, 8))
     cx = sns.scatterplot(x="Education_level", y="Total",
-                         hue="Job_title", size="Total",
+                         hue="Job_title", size= "Total",
                          sizes=(100, 500), legend='brief',
                          data=df_edu,
                          )
@@ -63,7 +70,7 @@ def graph_reporting(country):
 
 
 def pdf_reporting():
-    print('Adding images.')
+    print('Extracting chart images.')
     img1 = Image.open('./data/reporting/gender_distribution.jpeg')
     img2 = Image.open('./data/reporting/vote_intention.jpeg')
     img3 = Image.open('./data/reporting/top_education_jobs.jpeg')
@@ -74,8 +81,13 @@ def pdf_reporting():
 
 def email_reporting(email):
 
-    fromaddr = "p.villamanario@gmail.com"  # <--------------------------------------  Cuenta envío
-    toaddr = email  # <----------------------------------------  Email receptor
+    # Gmail app key retrieving
+    cfg = configparser.RawConfigParser()
+    cfg.read('config.ini')
+
+    # Sender / Receiver
+    fromaddr = "p.villamanario@gmail.com"
+    toaddr = email
 
     # instance of MIMEMultipart
     msg = MIMEMultipart()
@@ -128,7 +140,7 @@ def email_reporting(email):
     s.starttls()
 
     # Authentication
-    s.login(fromaddr, "xpoxkhxobdkncdos")  # <----------------------------------------  Contraseña de aplicación
+    s.login(fromaddr, cfg['mail']['app_key'])  # <----------------------------------------  Contraseña de aplicación
 
     # Converts the Multipart msg into a string
     text = msg.as_string()
@@ -139,4 +151,23 @@ def email_reporting(email):
     # terminating the session
     s.quit()
 
-    print(f'Reporting sent to {email}')
+    print(f'Reporting sent to {email}.\n')
+
+
+def tweets():
+
+    CONSUMER_KEY = 'kMjAJ03t0W9Z53zDy5jlyUkBj'
+    CONSUMER_SECRET = 'FWYQRVEUR2QVte6kYUAIZXmEntjXNRP461VkJFjAB8eQlZqZYF'
+    ACCESS_TOKEN = '1273324310204166158-ZtNvphpB6U0QhTRj3bvSXpaGGjuMZI'
+    ACCESS_SECRET = 'eEf15oUhVCgEpiA1Sr9iSgyZuVVTYPIqDuK0u2C1gOxbS'
+
+    auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
+    auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
+
+    api = tweepy.API(auth)
+
+    tt = api.search(q='#basicincome OR #rentabasica OR #revenuuniversel', include_entities=False)
+
+    print('\n\n __LAST TWEETS ABOUT BASIC INCOME__\n')
+    for i in tt:
+        print(i.text, '|', i.created_at, '|', i.place.name if i.place else "Undefined place")

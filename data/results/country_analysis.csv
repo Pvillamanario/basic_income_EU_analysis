@@ -1,209 +1,214 @@
 ,Country,Job title,Gender,Quantity,Country percentage ‰
-2300,Spain,Analytical Data Miner,Male,1,1.7182130584192439
-2301,Spain,Automatic Data Processing Customer Liaison (ADP Customer Liaison),Female,5,8.591065292096221
-2302,Spain,Automatic Data Processing Customer Liaison (ADP Customer Liaison),Male,6,10.309278350515465
-2303,Spain,Automatic Data Processing Planner,Female,5,8.591065292096221
-2304,Spain,Automatic Data Processing Planner,Male,4,6.8728522336769755
-2305,Spain,Automatic Data Processing Planner (ADP Planner),Female,3,5.154639175257732
-2306,Spain,Automatic Data Processing Planner (ADP Planner),Male,8,13.745704467353951
-2307,Spain,Automatic Data Processing Systems Security Specialist (ADP Systems Security),Female,3,5.154639175257732
-2308,Spain,Automatic Data Processing Systems Security Specialist (ADP Systems Security),Male,4,6.8728522336769755
-2309,Spain,Business Database Analyst,Female,1,1.7182130584192439
-2310,Spain,Business Database Analyst,Male,1,1.7182130584192439
-2311,Spain,Clinical Data Abstractor,Male,1,1.7182130584192439
-2312,Spain,Clinical Data Associate,Female,1,1.7182130584192439
-2313,Spain,Clinical Data Associate,Male,1,1.7182130584192439
-2314,Spain,Clinical Data Management Manager (CDM Manager),Female,1,1.7182130584192439
-2315,Spain,Clinical Data Management Manager (CDM Manager),Male,2,3.4364261168384878
-2316,Spain,Clinical Data Manager,Male,2,3.4364261168384878
-2317,Spain,Clinical Data Specialist,Female,1,1.7182130584192439
-2318,Spain,Computer or Data Processing Systems Consultant,Female,4,6.8728522336769755
-2319,Spain,Computer or Data Processing Systems Consultant,Male,5,8.591065292096221
-2320,Spain,Crime Data Specialist,Male,1,1.7182130584192439
-2321,Spain,Data Administrator,Male,2,3.4364261168384878
-2322,Spain,Data Analysis Assistant,Male,1,1.7182130584192439
-2323,Spain,Data Analyst,Female,1,1.7182130584192439
-2324,Spain,Data Architect,Female,3,5.154639175257732
-2325,Spain,Data Architect,Male,5,8.591065292096221
-2326,Spain,Data Base Design Analyst,Female,4,6.8728522336769755
-2327,Spain,Data Base Design Analyst,Male,2,3.4364261168384878
-2328,Spain,Data Collector,Female,1,1.7182130584192439
-2329,Spain,Data Communications Analyst,Female,2,3.4364261168384878
-2330,Spain,Data Communications Analyst,Male,3,5.154639175257732
-2331,Spain,Data Communications Software Consultant,Female,6,10.309278350515465
-2332,Spain,Data Communications Software Consultant,Male,4,6.8728522336769755
-2333,Spain,Data Communications Technician,Female,1,1.7182130584192439
-2334,Spain,Data Communications Technician,Male,1,1.7182130584192439
-2335,Spain,Data Compiler,Female,2,3.4364261168384878
-2336,Spain,Data Compiler,Male,2,3.4364261168384878
-2337,Spain,Data Control Clerk Supervisor,Male,1,1.7182130584192439
-2338,Spain,Data Conversion Operator,Female,1,1.7182130584192439
-2339,Spain,Data Coordinator,Female,3,5.154639175257732
-2340,Spain,Data Coordinator,Male,7,12.027491408934708
-2341,Spain,Data Entry Associate,Female,1,1.7182130584192439
-2342,Spain,Data Entry Machine Operator,Female,2,3.4364261168384878
-2343,Spain,Data Entry Machine Operator,Male,1,1.7182130584192439
-2344,Spain,Data Entry Operator,Male,1,1.7182130584192439
-2345,Spain,Data Entry Representative,Female,1,1.7182130584192439
-2346,Spain,Data Entry Specialist,Female,1,1.7182130584192439
-2347,Spain,Data Entry Supervisor,Male,1,1.7182130584192439
-2348,Spain,Data Examination Clerk,Male,1,1.7182130584192439
-2349,Spain,Data Input Clerk,Male,1,1.7182130584192439
-2350,Spain,Data Keyer,Male,1,1.7182130584192439
-2351,Spain,Data Management Associate,Female,4,6.8728522336769755
-2352,Spain,Data Management Associate,Male,6,10.309278350515465
-2353,Spain,Data Management Information Technology Specialist,Female,2,3.4364261168384878
-2354,Spain,Data Management Information Technology Specialist,Male,3,5.154639175257732
-2355,Spain,Data Management Manager,Male,1,1.7182130584192439
-2356,Spain,Data Miner,Female,3,5.154639175257732
-2357,Spain,Data Miner,Male,2,3.4364261168384878
-2358,Spain,Data Modeler,Male,1,1.7182130584192439
-2359,Spain,Data Modeling Specialist,Female,5,8.591065292096221
-2360,Spain,Data Modeling Specialist,Male,4,6.8728522336769755
-2361,Spain,Data Officer,Female,1,1.7182130584192439
-2362,Spain,Data Officer,Male,1,1.7182130584192439
-2363,Spain,Data Operations Director,Female,2,3.4364261168384878
-2364,Spain,Data Operations Director,Male,2,3.4364261168384878
-2365,Spain,Data Processing Auditor,Female,1,1.7182130584192439
-2366,Spain,Data Processing Auditor,Male,3,5.154639175257732
-2367,Spain,Data Processing Auxiliary Equipment Operator,Male,2,3.4364261168384878
-2368,Spain,Data Processing Clerk,Male,3,5.154639175257732
-2369,Spain,Data Processing Consultant,Female,3,5.154639175257732
-2370,Spain,Data Processing Consultant,Male,3,5.154639175257732
-2371,Spain,Data Processing Equipment Repairer,Female,1,1.7182130584192439
-2372,Spain,Data Processing Equipment Repairer,Male,3,5.154639175257732
-2373,Spain,Data Processing Manager,Female,3,5.154639175257732
-2374,Spain,Data Processing Manager,Male,5,8.591065292096221
-2375,Spain,Data Processing Mechanic,Male,1,1.7182130584192439
-2376,Spain,Data Processing Supervisor,Female,1,1.7182130584192439
-2377,Spain,Data Processing Supervisor,Male,1,1.7182130584192439
-2378,Spain,Data Processing Systems Analyst,Female,2,3.4364261168384878
-2379,Spain,Data Processing Systems Analyst,Male,8,13.745704467353951
-2380,Spain,Data Processing Systems Project Planner,Female,4,6.8728522336769755
-2381,Spain,Data Processing Systems Project Planner,Male,4,6.8728522336769755
-2382,Spain,Data Recovery Planner,Male,2,3.4364261168384878
-2383,Spain,Data Reduction Technician,Female,4,6.8728522336769755
-2384,Spain,Data Reviewer,Female,1,1.7182130584192439
-2385,Spain,Data Sciences Director,Female,3,5.154639175257732
-2386,Spain,Data Sciences Director,Male,2,3.4364261168384878
-2387,Spain,Data Scientist,Female,2,3.4364261168384878
-2388,Spain,Data Scientist,Male,5,8.591065292096221
-2389,Spain,Data Security Administrator,Female,6,10.309278350515465
-2390,Spain,Data Security Administrator,Male,5,8.591065292096221
-2391,Spain,Data Security Analyst,Female,6,10.309278350515465
-2392,Spain,Data Security Analyst,Male,4,6.8728522336769755
-2393,Spain,Data Storage Specialist,Female,1,1.7182130584192439
-2394,Spain,Data Storage Specialist,Male,4,6.8728522336769755
-2395,Spain,Data Systems Manager,Female,4,6.8728522336769755
-2396,Spain,Data Systems Manager,Male,7,12.027491408934708
-2397,Spain,Data Technician,Male,2,3.4364261168384878
-2398,Spain,Data Transcriber,Female,1,1.7182130584192439
-2399,Spain,Data Transcriber,Male,1,1.7182130584192439
-2400,Spain,Data Typist,Female,1,1.7182130584192439
-2401,Spain,Data Warehouse Analyst,Female,4,6.8728522336769755
-2402,Spain,Data Warehouse Analyst,Male,4,6.8728522336769755
-2403,Spain,Data Warehouse Architect,Female,5,8.591065292096221
-2404,Spain,Data Warehouse Architect,Male,4,6.8728522336769755
-2405,Spain,Data Warehouse Developer,Male,2,3.4364261168384878
-2406,Spain,Data Warehouse Specialist,Female,5,8.591065292096221
-2407,Spain,Data Warehouse Specialist,Male,4,6.8728522336769755
-2408,Spain,Data Warehousing Engineer,Female,4,6.8728522336769755
-2409,Spain,Data Warehousing Engineer,Male,1,1.7182130584192439
-2410,Spain,Data Warehousing Manager,Female,4,6.8728522336769755
-2411,Spain,Data Warehousing Manager,Male,1,1.7182130584192439
-2412,Spain,Data Warehousing Specialist,Female,1,1.7182130584192439
-2413,Spain,Data Warehousing Specialist,Male,2,3.4364261168384878
-2414,Spain,Database Administration Associate,Female,3,5.154639175257732
-2415,Spain,Database Administration Associate,Male,4,6.8728522336769755
-2416,Spain,Database Administration Manager,Female,1,1.7182130584192439
-2417,Spain,Database Administration Manager,Male,7,12.027491408934708
-2418,Spain,Database Administration Project Manager,Female,2,3.4364261168384878
-2419,Spain,Database Architect,Female,2,3.4364261168384878
-2420,Spain,Database Architect,Male,6,10.309278350515465
-2421,Spain,Database Consultant,Female,1,1.7182130584192439
-2422,Spain,Database Consultant,Male,2,3.4364261168384878
-2423,Spain,Database Coordinator,Female,8,13.745704467353951
-2424,Spain,Database Coordinator,Male,4,6.8728522336769755
-2425,Spain,Database Design Analyst,Female,4,6.8728522336769755
-2426,Spain,Database Designer,Male,5,8.591065292096221
-2427,Spain,Database Developer,Female,1,1.7182130584192439
-2428,Spain,Database Development Project Manager,Female,1,1.7182130584192439
-2429,Spain,Database Development Project Manager,Male,1,1.7182130584192439
-2430,Spain,Database Development and Administration Project Manager,Female,6,10.309278350515465
-2431,Spain,Database Development and Administration Project Manager,Male,7,12.027491408934708
-2432,Spain,Database Engineer,Female,6,10.309278350515465
-2433,Spain,Database Engineer,Male,5,8.591065292096221
-2434,Spain,Database Management System Specialist (DBMS Specialist),Female,4,6.8728522336769755
-2435,Spain,Database Management System Specialist (DBMS Specialist),Male,9,15.463917525773196
-2436,Spain,Database Manager,Female,2,3.4364261168384878
-2437,Spain,Database Manager,Male,7,12.027491408934708
-2438,Spain,Database Marketing Analyst,Female,3,5.154639175257732
-2439,Spain,Database Marketing Analyst,Male,3,5.154639175257732
-2440,Spain,Database Modeler,Female,1,1.7182130584192439
-2441,Spain,Database Modeler,Male,1,1.7182130584192439
-2442,Spain,Database Security Administrator,Female,4,6.8728522336769755
-2443,Spain,Database Security Administrator,Male,4,6.8728522336769755
-2444,Spain,Database Security Expert,Female,3,5.154639175257732
-2445,Spain,Database Security Expert,Male,5,8.591065292096221
-2446,Spain,Database Software Technician,Female,2,3.4364261168384878
-2447,Spain,Database Software Technician,Male,6,10.309278350515465
-2448,Spain,Database Specialist,Female,2,3.4364261168384878
-2449,Spain,Database Specialist,Male,3,5.154639175257732
-2450,Spain,Database Technician,Male,1,1.7182130584192439
-2451,Spain,Database Tester,Male,3,5.154639175257732
-2452,Spain,Databases Computer Consultant,Female,2,3.4364261168384878
-2453,Spain,Databases Computer Consultant,Male,3,5.154639175257732
-2454,Spain,Databases Software Consultant,Female,3,5.154639175257732
-2455,Spain,Databases Software Consultant,Male,4,6.8728522336769755
-2456,Spain,Datastage Developer,Male,1,1.7182130584192439
-2457,Spain,Director of Data Operations,Female,5,8.591065292096221
-2458,Spain,Director of Data Operations,Male,3,5.154639175257732
-2459,Spain,Electronic Data Interchange System Developer (EDI System Developer),Female,3,5.154639175257732
-2460,Spain,Electronic Data Interchange System Developer (EDI System Developer),Male,6,10.309278350515465
-2461,Spain,Electronic Data Processing Auditor (EDP Auditor),Female,3,5.154639175257732
-2462,Spain,Electronic Data Processing Auditor (EDP Auditor),Male,3,5.154639175257732
-2463,Spain,"Engineer, System Electronic Data Processing (Engineer, System EDP)",Female,4,6.8728522336769755
-2464,Spain,"Engineer, System Electronic Data Processing (Engineer, System EDP)",Male,1,1.7182130584192439
-2465,Spain,Field Artillery Automated Tactical Data System Specialist,Female,1,1.7182130584192439
-2466,Spain,Field Artillery Automated Tactical Data System Specialist,Male,1,1.7182130584192439
-2467,Spain,Field Traffic Data Technician,Male,1,1.7182130584192439
-2468,Spain,Flight Data Technician,Male,1,1.7182130584192439
-2469,Spain,Flight Test Data Acquisition Technician,Female,1,1.7182130584192439
-2470,Spain,Flight Test Data Acquisition Technician,Male,2,3.4364261168384878
-2471,Spain,Geographic Information Systems Data Administrator (GIS Data Administrator),Female,4,6.8728522336769755
-2472,Spain,Geographic Information Systems Data Administrator (GIS Data Administrator),Male,5,8.591065292096221
-2473,Spain,Geographic Information Systems Data Manager (GIS Data Manager),Female,4,6.8728522336769755
-2474,Spain,Geographic Information Systems Data Manager (GIS Data Manager),Male,6,10.309278350515465
-2475,Spain,Geographic Information Systems Data Specialist (GIS Data Specialist),Female,2,3.4364261168384878
-2476,Spain,Geographic Information Systems Data Specialist (GIS Data Specialist),Male,3,5.154639175257732
-2477,Spain,Geographic Information Systems Database Administrator (GIS Database Administrator),Female,2,3.4364261168384878
-2478,Spain,Geographic Information Systems Database Administrator (GIS Database Administrator),Male,6,10.309278350515465
-2479,Spain,Head of Information Systems and Data Processing,Female,3,5.154639175257732
-2480,Spain,Head of Information Systems and Data Processing,Male,5,8.591065292096221
-2481,Spain,Health Data Analyst,Male,2,3.4364261168384878
-2482,Spain,Internet Database Specialist,Female,2,3.4364261168384878
-2483,Spain,Internet Database Specialist,Male,1,1.7182130584192439
-2484,Spain,LiDAR Data Analyst,Female,1,1.7182130584192439
-2485,Spain,LiDAR Data Analyst,Male,1,1.7182130584192439
-2486,Spain,Maintenance Data Analyst,Male,1,1.7182130584192439
-2487,Spain,Marketing Database Analyst,Male,1,1.7182130584192439
-2488,Spain,Medical Data Analyst,Male,1,1.7182130584192439
-2489,Spain,Micro Computer Data Processor,Female,2,3.4364261168384878
-2490,Spain,Micro Computer Data Processor,Male,1,1.7182130584192439
-2491,Spain,Naval Tactical Data System--Combat Information Center Officer,Female,1,1.7182130584192439
-2492,Spain,Naval Tactical Data System--Combat Information Center Officer,Male,2,3.4364261168384878
-2493,Spain,"Operations Officer, Afloat (Naval Tactical Data Systems)",Male,1,1.7182130584192439
-2494,Spain,Oracle Database Administrator (Oracle DBA),Female,3,5.154639175257732
-2495,Spain,Oracle Database Administrator (Oracle DBA),Male,4,6.8728522336769755
-2496,Spain,Reference Data Expert,Female,1,1.7182130584192439
-2497,Spain,Reference Data Expert,Male,1,1.7182130584192439
-2498,Spain,SCADA Operator (Supervisory Control and Data Acquisition Operator),Male,1,1.7182130584192439
-2499,Spain,SCADA Technician (Supervisory Control and Data Acquisition Technician),Female,1,1.7182130584192439
-2500,Spain,SQL Database Administrator,Female,3,5.154639175257732
-2501,Spain,SQL Database Administrator,Male,5,8.591065292096221
-2502,Spain,Scientific Database Curator,Male,2,3.4364261168384878
-2503,Spain,Survey Data Technician,Female,1,1.7182130584192439
-2504,Spain,Voice and Data Technician,Female,1,1.7182130584192439
-2505,Spain,Voice and Data Technician,Male,1,1.7182130584192439
-2506,Spain,Weight in Motion Field Data Collection Technician,Female,2,3.4364261168384878
-2507,Spain,Weight in Motion Field Data Collection Technician,Male,2,3.4364261168384878
+0,United_Kingdom,Analytical Data Miner,Female,1,1.5600624024960998
+1,United_Kingdom,Analytical Data Miner,Male,1,1.5600624024960998
+2,United_Kingdom,Automatic Data Processing Customer Liaison (ADP Customer Liaison),Female,3,4.6801872074882995
+3,United_Kingdom,Automatic Data Processing Customer Liaison (ADP Customer Liaison),Male,7,10.9204368174727
+4,United_Kingdom,Automatic Data Processing Planner,Female,4,6.240249609984399
+5,United_Kingdom,Automatic Data Processing Planner,Male,5,7.800312012480499
+6,United_Kingdom,Automatic Data Processing Planner (ADP Planner),Female,3,4.6801872074882995
+7,United_Kingdom,Automatic Data Processing Planner (ADP Planner),Male,3,4.6801872074882995
+8,United_Kingdom,Automatic Data Processing Systems Security Specialist (ADP Systems Security),Male,10,15.600624024960998
+9,United_Kingdom,Business Database Analyst,Male,1,1.5600624024960998
+10,United_Kingdom,Clinical Data Associate,Female,1,1.5600624024960998
+11,United_Kingdom,Clinical Data Management Associate Director,Female,1,1.5600624024960998
+12,United_Kingdom,Clinical Data Manager,Male,1,1.5600624024960998
+13,United_Kingdom,Clinical Data Specialist,Female,1,1.5600624024960998
+14,United_Kingdom,Computer or Data Processing Systems Consultant,Female,5,7.800312012480499
+15,United_Kingdom,Computer or Data Processing Systems Consultant,Male,8,12.480499219968799
+16,United_Kingdom,Crime Data Specialist,Male,1,1.5600624024960998
+17,United_Kingdom,Customer Data Technician,Female,4,6.240249609984399
+18,United_Kingdom,Customer Data Technician,Male,1,1.5600624024960998
+19,United_Kingdom,Data Abstractor,Female,1,1.5600624024960998
+20,United_Kingdom,Data Acquisition Technician,Female,2,3.1201248049921997
+21,United_Kingdom,Data Acquisition Technician,Male,1,1.5600624024960998
+22,United_Kingdom,Data Administrator,Female,6,9.360374414976599
+23,United_Kingdom,Data Administrator,Male,7,10.9204368174727
+24,United_Kingdom,Data Analysis Assistant,Male,2,3.1201248049921997
+25,United_Kingdom,Data Analyst,Female,2,3.1201248049921997
+26,United_Kingdom,Data Analyst,Male,1,1.5600624024960998
+27,United_Kingdom,Data Architect,Female,5,7.800312012480499
+28,United_Kingdom,Data Architect,Male,5,7.800312012480499
+29,United_Kingdom,Data Base Design Analyst,Male,5,7.800312012480499
+30,United_Kingdom,Data Center Manager,Female,1,1.5600624024960998
+31,United_Kingdom,Data Center Operator,Female,1,1.5600624024960998
+32,United_Kingdom,Data Collection Technician,Female,1,1.5600624024960998
+33,United_Kingdom,Data Collector,Male,1,1.5600624024960998
+34,United_Kingdom,Data Communications Analyst,Female,2,3.1201248049921997
+35,United_Kingdom,Data Communications Analyst,Male,3,4.6801872074882995
+36,United_Kingdom,Data Communications Software Consultant,Female,3,4.6801872074882995
+37,United_Kingdom,Data Communications Software Consultant,Male,7,10.9204368174727
+38,United_Kingdom,Data Compiler,Female,1,1.5600624024960998
+39,United_Kingdom,Data Compiler,Male,1,1.5600624024960998
+40,United_Kingdom,Data Conversion Operator,Male,1,1.5600624024960998
+41,United_Kingdom,Data Coordinator,Female,2,3.1201248049921997
+42,United_Kingdom,Data Coordinator,Male,7,10.9204368174727
+43,United_Kingdom,Data Entry Associate,Female,1,1.5600624024960998
+44,United_Kingdom,Data Entry Associate,Male,2,3.1201248049921997
+45,United_Kingdom,Data Entry Clerk,Female,1,1.5600624024960998
+46,United_Kingdom,Data Entry Machine Operator,Male,1,1.5600624024960998
+47,United_Kingdom,Data Entry Operator,Female,3,4.6801872074882995
+48,United_Kingdom,Data Entry Operator,Male,1,1.5600624024960998
+49,United_Kingdom,Data Entry Representative,Female,1,1.5600624024960998
+50,United_Kingdom,Data Entry Technician,Female,1,1.5600624024960998
+51,United_Kingdom,Data Examination Clerk,Male,2,3.1201248049921997
+52,United_Kingdom,Data Input Clerk,Female,3,4.6801872074882995
+53,United_Kingdom,Data Keyer,Female,1,1.5600624024960998
+54,United_Kingdom,Data Management Associate,Female,2,3.1201248049921997
+55,United_Kingdom,Data Management Associate,Male,3,4.6801872074882995
+56,United_Kingdom,Data Management Information Technology Specialist,Female,2,3.1201248049921997
+57,United_Kingdom,Data Management Information Technology Specialist,Male,1,1.5600624024960998
+58,United_Kingdom,Data Management Manager,Male,1,1.5600624024960998
+59,United_Kingdom,Data Manager,Male,2,3.1201248049921997
+60,United_Kingdom,Data Miner,Female,4,6.240249609984399
+61,United_Kingdom,Data Miner,Male,3,4.6801872074882995
+62,United_Kingdom,Data Modeler,Female,1,1.5600624024960998
+63,United_Kingdom,Data Modeler,Male,1,1.5600624024960998
+64,United_Kingdom,Data Modeling Specialist,Female,5,7.800312012480499
+65,United_Kingdom,Data Modeling Specialist,Male,5,7.800312012480499
+66,United_Kingdom,Data Officer,Female,3,4.6801872074882995
+67,United_Kingdom,Data Officer,Male,5,7.800312012480499
+68,United_Kingdom,Data Operations Director,Female,2,3.1201248049921997
+69,United_Kingdom,Data Operations Director,Male,3,4.6801872074882995
+70,United_Kingdom,Data Processing Auditor,Female,2,3.1201248049921997
+71,United_Kingdom,Data Processing Auditor,Male,6,9.360374414976599
+72,United_Kingdom,Data Processing Auxiliary Equipment Operator,Male,1,1.5600624024960998
+73,United_Kingdom,Data Processing Consultant,Female,3,4.6801872074882995
+74,United_Kingdom,Data Processing Consultant,Male,2,3.1201248049921997
+75,United_Kingdom,Data Processing Control Clerk,Female,1,1.5600624024960998
+76,United_Kingdom,Data Processing Manager,Female,5,7.800312012480499
+77,United_Kingdom,Data Processing Manager,Male,3,4.6801872074882995
+78,United_Kingdom,Data Processing Mechanic,Male,1,1.5600624024960998
+79,United_Kingdom,Data Processing Services Sales Representative,Male,1,1.5600624024960998
+80,United_Kingdom,Data Processing Supervisor,Female,1,1.5600624024960998
+81,United_Kingdom,Data Processing Systems Analyst,Female,4,6.240249609984399
+82,United_Kingdom,Data Processing Systems Analyst,Male,8,12.480499219968799
+83,United_Kingdom,Data Processing Systems Project Planner,Female,3,4.6801872074882995
+84,United_Kingdom,Data Processing Systems Project Planner,Male,2,3.1201248049921997
+85,United_Kingdom,Data Processor,Female,3,4.6801872074882995
+86,United_Kingdom,Data Processor,Male,2,3.1201248049921997
+87,United_Kingdom,Data Recovery Planner,Male,2,3.1201248049921997
+88,United_Kingdom,Data Reduction Technician,Female,1,1.5600624024960998
+89,United_Kingdom,Data Reviewer,Female,1,1.5600624024960998
+90,United_Kingdom,Data Reviewer,Male,1,1.5600624024960998
+91,United_Kingdom,Data Sciences Director,Male,1,1.5600624024960998
+92,United_Kingdom,Data Scientist,Female,1,1.5600624024960998
+93,United_Kingdom,Data Scientist,Male,7,10.9204368174727
+94,United_Kingdom,Data Security Administrator,Male,4,6.240249609984399
+95,United_Kingdom,Data Security Analyst,Female,2,3.1201248049921997
+96,United_Kingdom,Data Security Analyst,Male,7,10.9204368174727
+97,United_Kingdom,Data Specialist,Female,1,1.5600624024960998
+98,United_Kingdom,Data Storage Specialist,Female,4,6.240249609984399
+99,United_Kingdom,Data Storage Specialist,Male,2,3.1201248049921997
+100,United_Kingdom,Data Systems Manager,Female,1,1.5600624024960998
+101,United_Kingdom,Data Systems Manager,Male,9,14.0405616224649
+102,United_Kingdom,Data Technician,Female,1,1.5600624024960998
+103,United_Kingdom,Data Typist,Female,2,3.1201248049921997
+104,United_Kingdom,Data Typist,Male,1,1.5600624024960998
+105,United_Kingdom,Data Warehouse Analyst,Female,3,4.6801872074882995
+106,United_Kingdom,Data Warehouse Analyst,Male,5,7.800312012480499
+107,United_Kingdom,Data Warehouse Architect,Female,5,7.800312012480499
+108,United_Kingdom,Data Warehouse Architect,Male,7,10.9204368174727
+109,United_Kingdom,Data Warehouse Developer,Female,2,3.1201248049921997
+110,United_Kingdom,Data Warehouse Developer,Male,5,7.800312012480499
+111,United_Kingdom,Data Warehouse Specialist,Female,2,3.1201248049921997
+112,United_Kingdom,Data Warehouse Specialist,Male,6,9.360374414976599
+113,United_Kingdom,Data Warehousing Engineer,Female,1,1.5600624024960998
+114,United_Kingdom,Data Warehousing Engineer,Male,3,4.6801872074882995
+115,United_Kingdom,Data Warehousing Manager,Female,2,3.1201248049921997
+116,United_Kingdom,Data Warehousing Manager,Male,2,3.1201248049921997
+117,United_Kingdom,Data Warehousing Specialist,Female,3,4.6801872074882995
+118,United_Kingdom,Data Warehousing Specialist,Male,4,6.240249609984399
+119,United_Kingdom,Database Administration Associate,Female,5,7.800312012480499
+120,United_Kingdom,Database Administration Associate,Male,8,12.480499219968799
+121,United_Kingdom,Database Administration Manager,Female,4,6.240249609984399
+122,United_Kingdom,Database Administration Manager,Male,3,4.6801872074882995
+123,United_Kingdom,Database Administration Project Manager,Female,1,1.5600624024960998
+124,United_Kingdom,Database Administration Project Manager,Male,2,3.1201248049921997
+125,United_Kingdom,Database Administrator (DBA),Male,1,1.5600624024960998
+126,United_Kingdom,Database Analyst,Female,1,1.5600624024960998
+127,United_Kingdom,Database Analyst,Male,1,1.5600624024960998
+128,United_Kingdom,Database Architect,Female,1,1.5600624024960998
+129,United_Kingdom,Database Architect,Male,8,12.480499219968799
+130,United_Kingdom,Database Consultant,Female,3,4.6801872074882995
+131,United_Kingdom,Database Consultant,Male,7,10.9204368174727
+132,United_Kingdom,Database Coordinator,Male,8,12.480499219968799
+133,United_Kingdom,Database Design Analyst,Female,3,4.6801872074882995
+134,United_Kingdom,Database Design Analyst,Male,6,9.360374414976599
+135,United_Kingdom,Database Designer,Female,6,9.360374414976599
+136,United_Kingdom,Database Designer,Male,6,9.360374414976599
+137,United_Kingdom,Database Developer,Male,1,1.5600624024960998
+138,United_Kingdom,Database Development Project Manager,Male,1,1.5600624024960998
+139,United_Kingdom,Database Development and Administration Project Manager,Female,1,1.5600624024960998
+140,United_Kingdom,Database Development and Administration Project Manager,Male,4,6.240249609984399
+141,United_Kingdom,Database Engineer,Female,3,4.6801872074882995
+142,United_Kingdom,Database Engineer,Male,8,12.480499219968799
+143,United_Kingdom,Database Management System Specialist (DBMS Specialist),Female,4,6.240249609984399
+144,United_Kingdom,Database Management System Specialist (DBMS Specialist),Male,4,6.240249609984399
+145,United_Kingdom,Database Manager,Female,6,9.360374414976599
+146,United_Kingdom,Database Manager,Male,6,9.360374414976599
+147,United_Kingdom,Database Marketing Analyst,Female,3,4.6801872074882995
+148,United_Kingdom,Database Marketing Analyst,Male,2,3.1201248049921997
+149,United_Kingdom,Database Modeler,Female,5,7.800312012480499
+150,United_Kingdom,Database Modeler,Male,5,7.800312012480499
+151,United_Kingdom,Database Programmer,Female,1,1.5600624024960998
+152,United_Kingdom,Database Security Administrator,Female,3,4.6801872074882995
+153,United_Kingdom,Database Security Administrator,Male,3,4.6801872074882995
+154,United_Kingdom,Database Security Expert,Female,4,6.240249609984399
+155,United_Kingdom,Database Security Expert,Male,6,9.360374414976599
+156,United_Kingdom,Database Software Technician,Female,3,4.6801872074882995
+157,United_Kingdom,Database Software Technician,Male,3,4.6801872074882995
+158,United_Kingdom,Database Specialist,Female,2,3.1201248049921997
+159,United_Kingdom,Database Specialist,Male,5,7.800312012480499
+160,United_Kingdom,Database Technician,Male,1,1.5600624024960998
+161,United_Kingdom,Database Tester,Female,9,14.0405616224649
+162,United_Kingdom,Database Tester,Male,5,7.800312012480499
+163,United_Kingdom,Databases Computer Consultant,Female,1,1.5600624024960998
+164,United_Kingdom,Databases Computer Consultant,Male,4,6.240249609984399
+165,United_Kingdom,Databases Software Consultant,Female,2,3.1201248049921997
+166,United_Kingdom,Databases Software Consultant,Male,2,3.1201248049921997
+167,United_Kingdom,Director of Data Operations,Female,1,1.5600624024960998
+168,United_Kingdom,Director of Data Operations,Male,4,6.240249609984399
+169,United_Kingdom,Electronic Data Interchange System Developer (EDI System Developer),Female,3,4.6801872074882995
+170,United_Kingdom,Electronic Data Interchange System Developer (EDI System Developer),Male,5,7.800312012480499
+171,United_Kingdom,Electronic Data Processing Auditor (EDP Auditor),Female,2,3.1201248049921997
+172,United_Kingdom,Electronic Data Processing Auditor (EDP Auditor),Male,3,4.6801872074882995
+173,United_Kingdom,"Engineer, System Electronic Data Processing (Engineer, System EDP)",Female,5,7.800312012480499
+174,United_Kingdom,"Engineer, System Electronic Data Processing (Engineer, System EDP)",Male,3,4.6801872074882995
+175,United_Kingdom,Field Artillery Automated Tactical Data System Specialist,Male,1,1.5600624024960998
+176,United_Kingdom,Field Traffic Data Technician,Female,2,3.1201248049921997
+177,United_Kingdom,Field Traffic Data Technician,Male,1,1.5600624024960998
+178,United_Kingdom,Flight Data Technician,Male,1,1.5600624024960998
+179,United_Kingdom,Flight Test Data Acquisition Technician,Male,2,3.1201248049921997
+180,United_Kingdom,GPS Field Data Collector (Global Positioning System Field Data Collector),Female,1,1.5600624024960998
+181,United_Kingdom,Geographic Information Systems Data Administrator (GIS Data Administrator),Female,4,6.240249609984399
+182,United_Kingdom,Geographic Information Systems Data Administrator (GIS Data Administrator),Male,4,6.240249609984399
+183,United_Kingdom,Geographic Information Systems Data Manager (GIS Data Manager),Female,2,3.1201248049921997
+184,United_Kingdom,Geographic Information Systems Data Manager (GIS Data Manager),Male,2,3.1201248049921997
+185,United_Kingdom,Geographic Information Systems Data Specialist (GIS Data Specialist),Female,7,10.9204368174727
+186,United_Kingdom,Geographic Information Systems Data Specialist (GIS Data Specialist),Male,5,7.800312012480499
+187,United_Kingdom,Geographic Information Systems Database Administrator (GIS Database Administrator),Female,2,3.1201248049921997
+188,United_Kingdom,Geographic Information Systems Database Administrator (GIS Database Administrator),Male,5,7.800312012480499
+189,United_Kingdom,Head of Information Systems and Data Processing,Female,6,9.360374414976599
+190,United_Kingdom,Head of Information Systems and Data Processing,Male,6,9.360374414976599
+191,United_Kingdom,Internet Database Specialist,Female,4,6.240249609984399
+192,United_Kingdom,Internet Database Specialist,Male,5,7.800312012480499
+193,United_Kingdom,LiDAR Data Analyst,Male,2,3.1201248049921997
+194,United_Kingdom,Log Data Technician,Male,1,1.5600624024960998
+195,United_Kingdom,Maintenance Data Analyst,Female,1,1.5600624024960998
+196,United_Kingdom,Maintenance Data Analyst,Male,1,1.5600624024960998
+197,United_Kingdom,Marketing Database Analyst,Female,1,1.5600624024960998
+198,United_Kingdom,Marketing Database Analyst,Male,2,3.1201248049921997
+199,United_Kingdom,Medical Data Analyst,Female,2,3.1201248049921997
+200,United_Kingdom,Medical Data Analyst,Male,2,3.1201248049921997
+201,United_Kingdom,Micro Computer Data Processor,Female,1,1.5600624024960998
+202,United_Kingdom,Naval Tactical Data System--Combat Information Center Officer,Female,2,3.1201248049921997
+203,United_Kingdom,Naval Tactical Data System--Combat Information Center Officer,Male,2,3.1201248049921997
+204,United_Kingdom,"Naval Tactical Data System--Combat Information Center Watch Officer, General",Female,1,1.5600624024960998
+205,United_Kingdom,"Naval Tactical Data System--Combat Information Center Watch Officer, General",Male,1,1.5600624024960998
+206,United_Kingdom,Oracle Database Administrator (Oracle DBA),Female,2,3.1201248049921997
+207,United_Kingdom,Oracle Database Administrator (Oracle DBA),Male,7,10.9204368174727
+208,United_Kingdom,SCADA Operator (Supervisory Control and Data Acquisition Operator),Female,1,1.5600624024960998
+209,United_Kingdom,SCADA Technician (Supervisory Control and Data Acquisition Technician),Male,1,1.5600624024960998
+210,United_Kingdom,SQL Database Administrator,Female,3,4.6801872074882995
+211,United_Kingdom,SQL Database Administrator,Male,5,7.800312012480499
+212,United_Kingdom,Survey Data Technician,Male,1,1.5600624024960998

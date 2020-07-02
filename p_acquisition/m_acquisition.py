@@ -50,12 +50,15 @@ def api_request_job_codes():
 
     norm_job_dic['none'] = 'none'  # Let's add none to job dic
 
-    print('Job titles retrieved and saved.')
+    print('Job titles retrieved and saved.\n')
     pd.DataFrame(norm_job_dic.items(), columns=['normalized_job_code', 'title'])\
         .to_parquet('./data/raw/norm_job_codes-names.parquet')
 
 
 def country_codes():
+
+    print('Loading country list.')
+
     url = 'https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Country_codes'
     html = requests.get(url).content
 
@@ -67,6 +70,18 @@ def country_codes():
         if str(i) != ' ':
             lst.append(str(i)[4:-6])
 
+    # countries = []
+    # codes = []
+    #
+    # for i in range(0, len(lst[:56])):  # Hasta UK
+    #     if i % 2 == 0:
+    #         countries.append(lst[i])
+    #     else:
+    #         codes.append((lst[i].strip())[1:-1])
+    #
+    # pd.DataFrame(zip(countries, codes), columns=['country', 'code'])\
+    #     .to_parquet('./data/raw/webscraping_country_code-name.parquet')
+
     countries = []
     codes = []
 
@@ -76,5 +91,7 @@ def country_codes():
         else:
             codes.append((lst[i].strip())[1:-1])
 
-    pd.DataFrame(zip(countries, codes), columns=['country', 'code'])\
-        .to_parquet('./data/raw/webscraping_country_code-name.parquet')
+    df_countries = pd.DataFrame(zip(countries, codes), columns=['country', 'code'])
+    df_countries.to_parquet('./data/raw/webscraping_country_code-name.parquet')
+
+    print('Country list loaded.\n')

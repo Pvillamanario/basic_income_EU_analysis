@@ -4,20 +4,29 @@ import numpy as np
 
 # analysis functions
 
-def analyze_ch1(country):
+def analysis_settings(country):
     # Deactivating SettingWithCopyWarning.
-    #A value is trying to be set on a copy of a slice from a DataFrame.
-
+    # A value is trying to be set on a copy of a slice from a DataFrame.
     pd.set_option('mode.chained_assignment', None)
 
+    # Selecting country slice from dataset to be analysed
+
+    df_poll = pd.read_csv('./data/processed/df_processed.csv')
+    df_poll.replace(' United Kingdom', 'United_Kingdom', inplace=True)
+    country_filter = df_poll['country'] == country
+
     if country == '':
-        print('Whole dataset selected: ')
-    print(f'The chosen country is: {country}')
+        print('---Whole dataset selected:---')
+        df_poll = df_poll
+    else:
+        print(f'\n---The chosen country is: {country.upper()} ---\n')
+        df_poll = df_poll[country_filter]
+
+    return df_poll
 
 
+def analyze_ch1(df_poll):
     print('Starting analysis.')
-    df_poll = pd.read_json('./data/processed/df_processed.json')
-
     df_ch1 = df_poll[['country', 'job_title', 'gender', 'uuid']]
     df_ch1 = df_ch1.groupby(['country', 'job_title', 'gender'])['uuid'].count().reset_index()
     df_ch1.rename(columns={'country': 'Country',
@@ -25,31 +34,21 @@ def analyze_ch1(country):
                            'gender': 'Gender',
                            'uuid': 'Quantity'},
                   inplace=True)
+    df_ch1['Country percentage ‰'] = df_ch1['Quantity'] / df_ch1['Quantity'].sum() * 1000
 
-    if country == '':
-        df_country = df_ch1
-
-    else:
-        country_filter = df_ch1['Country'] == country.capitalize()
-        df_country = df_ch1.loc[country_filter]
-
-    df_country['Country percentage ‰'] = df_country['Quantity'] / df_country['Quantity'].sum() * 1000
-
-    df_country.to_csv('./data/results/country_analysis.csv')
+    df_ch1.to_csv('./data/results/country_analysis.csv')
     print('Country analysis saved to .csv\n')
 
-def analysis_ch2():
 
+def analysis_ch2(df_poll):
     print('Starting vote intention analysis.')
-
-    df_poll = pd.read_json('./data/processed/df_processed.json')
     df_opinion = df_poll[['basic_income_vote',
                           'basic_income_arguments_for',
                           'basic_income_arguments_against', 'uuid']]
 
-    df_opinion['number_pro_args'] = df_opinion['basic_income_arguments_for']\
+    df_opinion['number_pro_args'] = df_opinion['basic_income_arguments_for'] \
         .apply(lambda x: len(x.split('|')))
-    df_opinion['number_con_args'] = df_opinion['basic_income_arguments_against']\
+    df_opinion['number_con_args'] = df_opinion['basic_income_arguments_against'] \
         .apply(lambda x: len(x.split('|')))
 
     df_opinion = df_opinion.groupby('basic_income_vote').agg(number_pro_args=('number_pro_args', 'sum'),
@@ -66,37 +65,17 @@ def analysis_ch2():
     df_opinion.to_csv('./data/results/opinion_analysis.csv')
     print('Vote intention analysis saved to .csv\n')
 
-def analysis_ch3():
 
+def analysis_ch3(df_poll):
     print('Starting top jobs/education level analysis.')
 
-    df_poll = pd.read_json('./data/processed/df_processed.json')
-
     df_edu = df_poll[['full_time_job', 'education_level', 'job_title', 'uuid']]
-    working_filter = df_edu['full_time_job'] == 'yes'
-
-    x = df_edu[working_filter].groupby(['education_level', 'job_title']).agg(total=('uuid', 'count'))
-    x.reset_index
-
-    df_high = x.loc['high', :].nlargest(3, 'total')
-    df_medium = x.loc['medium', :].nlargest(3, 'total')
-    df_low = x.loc['low', :].nlargest(3, 'total')
-    df_noedu = x.loc['no', :].nlargest(3, 'total')
-
-    df_high['Education_level'] = 'High'
-    df_medium['Education_level'] = 'Medium'
-    df_low['Education_level'] = 'Low'
-    df_noedu['Education_level'] = 'No'
-
-    df_high.reset_index().set_index('Education_level', inplace=True)
-    df_medium.reset_index().set_index('Education_level', inplace=True)
-    df_low.reset_index().set_index('Education_level', inplace=True)
-    df_noedu.reset_index().set_index('Education_level', inplace=True)
-
-    df_edu = pd.concat([df_high, df_medium, df_low, df_noedu]).reset_index()
-    df_edu.rename(columns={'job_title': 'Job_title',
-                           'total': 'Total'},
+    df_edu = df_edu.groupby(['education_level', 'job_title']).agg(total=('uuid', 'count'))
+    df_edu = df_edu.reset_index()
+    df_edu = df_edu.groupby('education_level').apply(lambda x: x.nlargest(3, 'total')).reset_index(drop=True)
+    df_edu.rename(columns={'education_level': 'Education_level', 'job_title': 'Job_title', 'total': 'Total'},
                   inplace=True)
-
+    df_edu.set_index('Education_level', inplace=True)
     df_edu.to_csv('./data/results/edu_level_analysis.csv')
-    print('Top jobs/education analysis saved to .csv\n')
+    print('Top jobs/education level analysis saved to .csv\n')
+

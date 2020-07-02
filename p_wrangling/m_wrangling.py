@@ -15,7 +15,6 @@ def wrangle():
 
     # Personal info wrangling:
     df_personal_info['age'] = df_personal_info['age'].apply(lambda x: re.sub(r'\D', '', x)).astype(int)
-    df_personal_info['gender'].unique()
     df_personal_info['gender'] = df_personal_info['gender'].apply(lambda x: x.lower().capitalize())
     df_personal_info["gender"].replace("Fem", "Female", inplace=True)
     df_personal_info['dem_has_children'] = df_personal_info['dem_has_children'].apply(lambda x: x.lower())
@@ -32,12 +31,9 @@ def wrangle():
 
     df_country_info['country'] = df_country_info['country_code'].apply(lambda x: df_country_codes.loc[x])
     df_country_info['rural'] = df_country_info['rural'].apply(lambda x: x.lower())
-    col_order = ['uuid', 'country_code', 'country', 'rural']
-    df_country_info = df_country_info[col_order]
-    print('--> df_country_info normalized.')
+    df_country_info = df_country_info[['uuid', 'country_code', 'country', 'rural']]
 
     # Career info wrangling:
-
     df_career_info['dem_education_level'].fillna('no', inplace=True)
     df_career_info['normalized_job_code'].replace('None', 'none', inplace=True)
     df_norm_job_codes.fillna('none', inplace=True)
@@ -49,10 +45,9 @@ def wrangle():
                  'title': 'job_title'},
         inplace=True)
 
-    print('--> df_career info normalized.')
+    print('--> df_career_info normalized.')
 
     # Poll info wrangling:
-
     df_poll_info.rename(columns={'question_bbi_2016wave4_basicincome_awareness': 'basic_income_awareness',
                                  'question_bbi_2016wave4_basicincome_vote': 'basic_income_vote',
                                  'question_bbi_2016wave4_basicincome_effect': 'basic_income_effect',
@@ -71,5 +66,5 @@ def wrangle():
         .merge(df_career_info, on='uuid', how='left') \
         .merge(df_poll_info, on='uuid', how='left')
 
-    df_processed.to_json('./data/processed/df_processed.json')
-    print('Processed data saved.')
+    df_processed.to_csv('./data/processed/df_processed.csv')
+    print('Processed data saved.\n')

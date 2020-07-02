@@ -15,6 +15,9 @@ def argument_parser():
 
 
 def main(arguments):
+
+    print('<< Starting pipeline >>\n')
+
     # Data acquisition
     mac.acquire_db_data(arguments.path)
     # mac.api_request_job_codes()
@@ -24,15 +27,18 @@ def main(arguments):
     mwr.wrangle()
 
     # Data analysis
-    man.analyze_ch1(arguments.country)
-    man.analysis_ch2()
-    man.analysis_ch3()
+    df_poll = man.analysis_settings(arguments.country)
+    man.analyze_ch1(df_poll)
+    man.analysis_ch2(df_poll)
+    man.analysis_ch3(df_poll)
 
     # Data reporting
     mre.graph_reporting(arguments.country)
     mre.pdf_reporting()
     mre.email_reporting(arguments.email)
-    # print('========================= Pipeline is complete. You may find the results in the folder ./data/results =========================')
+    # mre.tweets()
+
+    print('\n\n========== Pipeline is complete. You may find the results in the folder ./data/results =========')
 
 
 if __name__ == '__main__':
