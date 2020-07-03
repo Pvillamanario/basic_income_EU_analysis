@@ -173,10 +173,19 @@ def tweets(hashtag):
     print(f'\nLatest tweets about.... #{hashtag}')
     tt = api.search(q=f'#+{hashtag}', exclude='retweets', count=100, include_entities=False)
 
-    tweets = []
-    for i in range(10):
-        tweet = [tt['statuses'][i]['text'], tt['statuses'][i]['user']['location'], tt['statuses'][i]['created_at']]
-        tweets.append(tweet)
+    if len(tt['statuses']) == 0:
+        print('No tweets at this moment with location data for #hashtag and/or language.')
 
-    df_twitter = pd.DataFrame(tweets, columns=('Tweet', 'Location', 'Date'))
-    print(df_twitter.head())
+    else:
+        tweets = []
+        for i in range(len(tt['statuses'])):
+            tweet = []
+            if tt['statuses'][i]['user']['location'] != '':
+                tweet.append(tt['statuses'][i]['text'])
+                tweet.append(tt['statuses'][i]['user']['location'])
+                tweet.append(tt['statuses'][i]['created_at'])
+                tweets.append(tweet)
+            else:
+                pass
+        df_twitter = pd.DataFrame(tweets, columns=('Tweet', 'Location', 'Date'))
+        print(df_twitter)
