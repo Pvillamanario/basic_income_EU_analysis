@@ -9,7 +9,7 @@ intention concerning the Basic Income issue on a poll carried out around the Eur
 
 This is a MVP and not all data correspond to reality.
 
-![Image](/home/bob/Desktop/Ironhack/projects/basic_income_EU_analysis(data_project_module-1)/__trash__/poster_minimum_income.jpg)
+![Image](/home/bob/Desktop/Ironhack/projects/basic_income_EU_analysis(data_project_module-1)/data/images/poster_minimum_income.jpg)
 
 ---
 #### **Usage**
