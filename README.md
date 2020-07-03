@@ -54,7 +54,7 @@ With the previous analysis performed:
 - Charts generated for each of the analysis with seaborn.
 - Charts grouped as PDF file using PIL.
 - Report sent as attachment to de email address passed as  with SMTP lib.
-- \#BasicIncome tweets with text, location and date/time. 
+- \#BasicIncome tweets with text, location and date/time.
 
   
 ---
