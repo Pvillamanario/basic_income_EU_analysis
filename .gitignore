@@ -4,6 +4,9 @@ Enunciado.md
 notas.txt
 config.ini
 .~lock.Basic Income in Europe.odp#
+./data/processed/*.*
+./data/reporting/*.*
+./data/results/*.*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
