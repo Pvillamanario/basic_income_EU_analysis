@@ -20,7 +20,7 @@ Pipeline is launched through main_script.py giving as paramenters:
 - `-hs / --hashtag` - hashtag about Basic Income based on language - Text, location, date/time) **beta**.
 
 Example:
-`python main_script.py -p ./data/raw/raw_data_project_m1.db -e pvillamanario@gmail.com -c "United Kingdom" -hs basicincome`
+`python main_script.py -p ./data/raw/raw_data_project_m1.db -e pvillamanario@gmail.com -c Spain -hs rentabasica`
 
 
 ### **Inputs**
