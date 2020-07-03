@@ -9,7 +9,7 @@ intention concerning the Basic Income issue on a poll carried out around the Eur
 
 This is a MVP and not all data correspond to reality.
 
-![Image](/home/bob/Desktop/Ironhack/projects/basic_income_EU_analysis(data_project_module-1)/data/images/poster_minimum_income.jpg)
+![Image](https://www.globalbusinessoutlook.com/wp-content/uploads/2017/06/Universal-Basic-Income-810x456.jpg)
 
 ---
 #### **Usage**
@@ -54,6 +54,7 @@ With the previous analysis performed:
 - Charts generated for each of the analysis with seaborn.
 - Charts grouped as PDF file using PIL.
 - Report sent as attachment to de email address passed as  with SMTP lib.
+- \#BasicIncome tweets with text, location and date/time. 
 
   
 ---
