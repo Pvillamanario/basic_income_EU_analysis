@@ -1,6 +1,6 @@
 # EUROPEAN BASIC INCOME
 # Vote intention poll
-####IRONHACK Data Analysis - Project I
+###IRONHACK Data Analysis - Project I
 
 This repository correspond to the pipeline project performed at IRONHACK Data Analysis Bootcamp.
 
