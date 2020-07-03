@@ -1,99 +1,65 @@
-# Data Project README file
+# EUROPEAN BASIC INCOME
+# Vote intention poll
+####IRONHACK Data Analysis - Project I
 
-The README file describes the essence of the project playing the most important role. Most visitors will simply scroll down about twice on the README and leave if they are not interested. So, the README file should provide the reason **why** to checkout your project!!!). 
-Bearing that in mind, your job is to: 
-- Tell them what it is (with context).
-- Show them what it looks like in action.
-- Show them how they use it.
-- Tell them any other relevant details.
+This repository correspond to the pipeline project performed at IRONHACK Data Analysis Bootcamp.
 
-![Image](https://res.cloudinary.com/springboard-images/image/upload/q_auto,f_auto,fl_lossy/wordpress/2019/05/aiexcerpt.png)
+This pipeline completes data acquisition, wrangling, analysis and reporting tasks to process information about the vote 
+intention concerning the Basic Income issue on a poll carried out around the European Union. 
 
----
+This is a MVP and not all data correspond to reality.
 
-## **Formatting**
-Your readers will most likely view your README in a browser so please keep that in mind when formatting its content: 
-- Use proper format when necesary (e.g.: `import pandas as pd`). 
-- Categorize content using two or three levels of header beneath. 
-- Make use of **emphasis** to call out important words. 
-- Link to project pages for related libraries you mention. Link to Wikipedia, Wiktionary, even Urban Dictionary definitions for words of which a reader may not be familiar. Make amusing cultural references. 
-- Add links to related projects or services. 
-
-> Here you have a markdown cheatsheet [Link](https://commonmark.org/help/) and tutorial [Link](https://commonmark.org/help/tutorial/).
-
-
-## **Start writing ASAP:**
-*Last but not least, by writing your README soon you give yourself some pretty significant advantages. Most importantly, you’re giving yourself a chance to think through the project without the overhead of having to change code every time you change your mind about how something should be organized or what should be included.*
-
-
-## **Suggested Structure:**
-
-### :raising_hand: **Name** 
-Self-explanatory names are best. If the name sounds too vague or unrelated, it may be a signal to move on. It also must be catchy. Images, Logo, Gif or some color is strongly recommended.
-
-### :baby: **Status**
-Alpha, Beta, 1.1, Ironhack Data Analytics Final Project, etc... It's OK to write a sentence, too. The goal is to let interested people know where this project is at.
-
-### :running: **One-liner**
-Having a one-liner that describes the pipeline/api/app is useful for getting an idea of what your code does in slightly greater detail. 
-
-### :computer: **Technology stack**
-Python, Pandas, Scipy, Scikit-learn, etc. Indicate the technological nature of the software, including primary programming language(s), main libraries and whether the software is intended as standalone or as a module in a framework or other ecosystem.
-
-### :boom: **Core technical concepts and inspiration**
-Why does it exist? Frame your project for the potential user. Compare/contrast your project with other, similar projects so the user knows how it is different from those projects. Highlight the technical concepts that your project demonstrates or supports. Keep it very brief.
-
-### :wrench: **Configuration**
-Requeriments, prerequisites, dependencies, installation instructions.
-
-### :see_no_evil: **Usage**
-Parameters, return values, known issues, thrown errors.
-
-### :file_folder: **Folder structure**
-```
-└── project
-    ├── __trash__
-    ├── .gitignore
-    ├── .env
-    ├── requeriments.txt
-    ├── README.md
-    ├── main_script.py
-    ├── notebooks
-    │   ├── notebook1.ipynb
-    │   └── notebook2.ipynb
-    ├── package1
-    │   ├── module1.py
-    │   └── module2.py
-    └── data
-        ├── raw
-        ├── processed
-        └── results
-```
-
-> Do not forget to include `__trash__` and `.env` in `.gitignore` 
-
-### :shit: **ToDo**
-Next steps, features planned, known bugs (shortlist).
-
-### :information_source: **Further info**
-Credits, alternatives, references, license.
-
-### :love_letter: **Contact info**
-Getting help, getting involved, hire me please.
+![Image](/home/bob/Desktop/Ironhack/projects/basic_income_EU_analysis(data_project_module-1)/__trash__/poster_minimum_income.jpg)
 
 ---
+#### **Usage**
+Pipeline is launched through main_script.py giving as paramenters:
+- `-c / --country` - an European country.
+- `-p / --path`    - raw database path.
+- `-e / --email`   - PDF report receiver via email.
+- `-hs / --hashtag` - hashtag about Basic Income based on language - Text, location, date/time) **beta**.
 
-> Here you have some repo examples:
-- [Mamba (OCR-Translator-Assistant)](https://github.com/YonatanRA/OCR-translator-assistant-project)
-- [Art Classification](https://github.com/serguma/art_classification)
-- [OSNet-IBN (width x 1.0) Lite](https://github.com/RodMech/OSNet-IBN1-Lite)
-- [Movie Founder](https://github.com/Alfagu/final-project-Ironhack-0419mad)
-- [Convolutional Neural Network to detect Pneumonia](https://github.com/jmolins89/final-project)
-- [Brain tumor detection project](https://github.com/alonsopdani/brain-tumor-detection-project)
-- [Policy-Gradient-Methods](https://github.com/cyoon1729/Policy-Gradient-Methods)
+Example:
+`python main_script.py -p ./data/raw/raw_data_project_m1.db -e pvillamanario@gmail.com -c United_Kingdom -hs basicincome`
 
-> Here you have some tools and references:
-- [Make a README](https://www.makeareadme.com/)
-- [Awesome README](https://github.com/matiassingers/awesome-readme)
-- [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+### **Inputs**
+
+- Raw database containing poll data.
+- API calls to retrieve job titles according to ID.
+- Web scraping to get country names from country codes.
+
+---
+### **Processing stages**
+
+#### **Acquisition**
+
+- [Data base](https://github.com/Pvillamanario/basic_income_EU_analysis/blob/master/data/raw/raw_data_project_m1.db) connection throuhg SQLAlchemy.
+- Data base data retrieved with pandas.
+- Job titles obtained with an [API](http://dataatwork.org/data/) call.
+- Country codes info got from [EuroStat](https://ec.europa.eu/eurostat/statistics-explained/index.php/Glossary:Country_codes) with requests and ReGex.
+
+#### **Wrangling**
+- Data combined, cleaned and normalized with pandas.
+- Clean .csv as output.
+  
+#### **Analysis**
+As requested, given one country or all of them, three .csv output containing:
+- Country, gender, job, number of people surveyed and % referred to total.
+- Vote intention and number of pro and against arguments.
+- Top jobs by quantity according to education level.
+  
+#### **Reporting**
+With the previous analysis performed:
+- Charts generated for each of the analysis with seaborn.
+- Charts grouped as PDF file using PIL.
+- Report sent as attachment to de email address passed as  with SMTP lib.
+
+  
+---
+### **:To be completed...:**
+- Passing a selection of countries as arguments.
+- Refactor and improve (a lot) file management, titles, country filter...
+- ~~Improve~~ Re do the charts so they can be shown to the world...
+---
 
