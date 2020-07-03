@@ -10,6 +10,7 @@ def argument_parser():
     parser.add_argument("-p", "--path", help="Database path.", type=str, required=True)
     parser.add_argument("-c", "--country", help="Country results.", type=str, required=False, default='')
     parser.add_argument("-e", "--email", help="Email to send reporting.", type=str, required=True)
+    parser.add_argument("-hs", "--hashtag", help="Twitter hashtag.", type=str, required=True)
     args = parser.parse_args()
     return args
 
@@ -36,7 +37,7 @@ def main(arguments):
     mre.graph_reporting(arguments.country)
     mre.pdf_reporting()
     mre.email_reporting(arguments.email)
-    # mre.tweets()
+    mre.tweets(arguments.hashtag)
 
     print('\n\n========== Pipeline is complete. You may find the results in the folder ./data/results =========')
 

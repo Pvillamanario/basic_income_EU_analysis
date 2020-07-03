@@ -3,6 +3,7 @@ import re
 
 # wrangling functions
 
+
 def wrangle():
 
     print('Raw data retrieved.')
@@ -48,10 +49,10 @@ def wrangle():
     print('--> df_career_info normalized.')
 
     # Poll info wrangling:
-    df_poll_info.rename(columns={'question_bbi_2016wave4_basicincome_awareness': 'basic_income_awareness',
-                                 'question_bbi_2016wave4_basicincome_vote': 'basic_income_vote',
-                                 'question_bbi_2016wave4_basicincome_effect': 'basic_income_effect',
-                                 'question_bbi_2016wave4_basicincome_argumentsfor': 'basic_income_arguments_for',
+    df_poll_info.rename(columns={'question_bbi_2016wave4_basicincome_awareness':        'basic_income_awareness',
+                                 'question_bbi_2016wave4_basicincome_vote':             'basic_income_vote',
+                                 'question_bbi_2016wave4_basicincome_effect':           'basic_income_effect',
+                                 'question_bbi_2016wave4_basicincome_argumentsfor':     'basic_income_arguments_for',
                                  'question_bbi_2016wave4_basicincome_argumentsagainst': 'basic_income_arguments_against'},
                         inplace=True)
 

@@ -59,7 +59,7 @@ def graph_reporting(country):
     print('Creating top jobs/education level chart.\n')
     plt.figure(figsize=(20, 8))
     cx = sns.scatterplot(x="Education_level", y="Total",
-                         hue="Job_title", size= "Total",
+                         hue="Job_title", size="Total",
                          sizes=(100, 500), legend='brief',
                          data=df_edu,
                          )
@@ -154,20 +154,29 @@ def email_reporting(email):
     print(f'Reporting sent to {email}.\n')
 
 
-def tweets():
+def tweets(hashtag):
 
-    CONSUMER_KEY = '---'
-    CONSUMER_SECRET = '---'
-    ACCESS_TOKEN = '---'
-    ACCESS_SECRET = '---'
+    # Tweepy app key retrieving
+    cfg = configparser.RawConfigParser()
+    cfg.read('config.ini')
+
+    CONSUMER_KEY = cfg['tweepy']['CONSUMER_KEY']
+    CONSUMER_SECRET = cfg['tweepy']['CONSUMER_SECRET']
+    ACCESS_TOKEN = cfg['tweepy']['ACCESS_TOKEN']
+    ACCESS_SECRET = cfg['tweepy']['ACCESS_SECRET']
 
     auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
     auth.set_access_token(ACCESS_TOKEN, ACCESS_SECRET)
 
-    api = tweepy.API(auth)
+    api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
-    tt = api.search(q='#basicincome OR #rentabasica OR #revenuuniversel', include_entities=False)
+    print(f'\nLatest tweets about.... {hashtag}')
+    tt = api.search(q=f'#+{hashtag}', exclude='retweets', count=100, include_entities=False)
 
-    print('\n\n __LAST TWEETS ABOUT BASIC INCOME__\n')
-    for i in tt:
-        print(i.text, '|', i.created_at, '|', i.place.name if i.place else "Undefined place")
+    tweets = []
+    for i in range(10):
+        tweet = [tt['statuses'][i]['text'], tt['statuses'][i]['user']['location'], tt['statuses'][i]['created_at']]
+        tweets.append(tweet)
+
+    df_twitter = pd.DataFrame(tweets, columns=('Tweet', 'Location', 'Date'))
+    print(df_twitter)
