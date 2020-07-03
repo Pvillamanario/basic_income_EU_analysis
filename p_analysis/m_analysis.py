@@ -12,7 +12,7 @@ def analysis_settings(country):
     # Selecting country slice from dataset to be analysed
 
     df_poll = pd.read_csv('./data/processed/df_processed.csv')
-    df_poll.replace(' United Kingdom', 'United_Kingdom', inplace=True)
+    df_poll.replace(' United Kingdom', 'United Kingdom', inplace=True)
     country_filter = df_poll['country'] == country
 
     if country == '':

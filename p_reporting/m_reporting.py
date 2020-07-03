@@ -170,7 +170,7 @@ def tweets(hashtag):
 
     api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
-    print(f'\nLatest tweets about.... {hashtag}')
+    print(f'\nLatest tweets about.... #{hashtag}')
     tt = api.search(q=f'#+{hashtag}', exclude='retweets', count=100, include_entities=False)
 
     tweets = []
@@ -179,4 +179,4 @@ def tweets(hashtag):
         tweets.append(tweet)
 
     df_twitter = pd.DataFrame(tweets, columns=('Tweet', 'Location', 'Date'))
-    print(df_twitter)
+    print(df_twitter.head())
