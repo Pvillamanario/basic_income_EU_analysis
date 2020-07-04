@@ -17,7 +17,7 @@ def argument_parser():
 
 def main(arguments):
 
-    print('<< Starting pipeline >>\n')
+    print('\n\n<< Starting pipeline >>\n')
 
     # Data acquisition
     mac.acquire_db_data(arguments.path)

@@ -7,6 +7,8 @@ config.ini
 ./data/processed/*.*
 ./data/reporting/*.*
 ./data/results/*.*
+.env.txt
+.gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
